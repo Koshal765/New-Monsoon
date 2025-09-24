@@ -174,7 +174,7 @@ function shareToWhatsapp(dishName, link) {
       </div>
 
       <form className="w-100 mt-5" onSubmit={handleSubmit}>
-        <div className="d-flex justify-content-between align-items-center w-100  mb-5 ">
+        <div className="d-flex justify-content-between align-items-center w-100  mb-5 flex-wrap">
           <div>
             <div className="d-flex align-items-center justify-content-between border" style={{width:"230px"}} >
          <h5 className="mt-2" >Filter by Tag</h5>  
@@ -190,7 +190,7 @@ function shareToWhatsapp(dishName, link) {
 
           {/* Search + Button */}
           <div
-            className="d-flex gap-2"
+            className="d-flex gap-2 mt-2"
             style={{ maxWidth: "400px", width: "100%" }}
           >
             <input

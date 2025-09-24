@@ -1,0 +1,166 @@
+[
+  {
+    "id": 0,
+    "dishName": "Chai",
+    "Ingredients": ["Milk", "Tea Leaves", "Ginger", "Cardamom", "Sugar" ],
+    "description": "Warm masala chai with cardamom & ginger.",
+    "Steps": "Boil water with spices, add milk, add tea leaves & simmer.",
+    "image": "https://images.unsplash.com/photo-1625033405953-f20401c7d848?q=80&w=600",
+    "tags": ["beverage", "chai","sweet"],
+    "link": "https://youtube.com/shorts/6DCRQ0wx1tg?si=amUuHv79vZkfPgf4"
+  },
+  {
+    "id": 1,
+    "dishName": "Samosa",
+    "Ingredients": [
+      "Boiled Potato",
+      "Maida",
+      "Ginger-Garlic Paste",
+      "Red Chilli Powder",
+      "Salt",
+      "Cumin Seeds"
+    ],
+    "description": "Crispy fried samosa stuffed with spicy potato filling.",
+    "Steps": "Prepare dough with maida, make potato stuffing, shape into cones, and deep fry.",
+    "image": "https://plus.unsplash.com/premium_photo-1695297516676-04a259917c03?q=80&w=600",
+    "tags": ["snacks", "fried", "spicy"],
+    "link": "https://youtube.com/shorts/HiqxqCBqsRo?si=V4waYaf5-I48DDUG"
+  },
+  {
+    "id": 2,
+    "dishName": "Maggi",
+    "Ingredients": ["Maggi Noodles", "Water", "Vegetables", "Salt", "Spices"],
+    "description": "2-minute masala maggi, perfect for rainy evenings.",
+    "Steps": "Boil water, add masala and noodles, cook with veggies.",
+    "image": "https://www.shutterstock.com/image-photo/indoor-photo-tandoori-maggi-red-260nw-2651697957.jpg",
+    "tags": ["snacks", "quick", "spicy"],
+    "link": "https://youtube.com/shorts/kiiADwWaoTY?si=69iaPKgJeOf2oeum"
+  },
+  {
+    "id": 3,
+    "dishName": "Pakora",
+    "Ingredients": ["Gram Flour", "Onions", "Chilli Powder", "Salt", "Green Chillies"],
+    "description": "Crunchy onion pakoras, a monsoon favorite.",
+    "Steps": "Mix ingredients into batter, deep fry till golden brown.",
+    "image": "https://thumbs.dreamstime.com/b/indian-snack-onion-pakora-traditional-popular-vegetarian-tray-73161188.jpg",
+    "tags": ["snacks", "fried", "monsoon"],
+    "link": "https://youtube.com/shorts/vSTGBnj2YOI?si=4xx4hT6ZeYWyGNRW"
+  },
+  {
+    "id": 4,
+    "dishName": "Corn Bhel",
+    "Ingredients": [
+      "Boiled Sweet Corn",
+      "Onions",
+      "Tomatoes",
+      "Green Chillies",
+      "Lemon Juice",
+      "Chaat Masala"
+    ],
+    "description": "Tangy corn bhel mixed with spices and lemon juice.",
+    "Steps": "Mix boiled corn with spices, lemon, onions, and tomatoes.",
+    "image": "https://d36v5spmfzyapc.cloudfront.net/wp-content/uploads/2020/08/Sweet-Corn-Bhel-4.jpg",
+    "tags": ["snacks", "healthy", "street food"],
+    "link": "https://youtube.com/shorts/ypAJgBfJvdo?si=1nTFD5vPMscQlu24"
+  },
+  {
+    "id": 5,
+    "dishName": " Khor Hot Soup",
+    "Ingredients": ["Khor Soup Packet","Vegetables", "Garlic", "Ginger", "Pepper", "Salt", "Water"],
+    "description": "Warm vegetable soup, comforting for rainy weather.",
+    "Steps": "Boil veggies with spices, blend, and simmer.",
+    "image": "https://images.stockcake.com/public/c/4/5/c45ca256-aa35-4bdd-b3e6-d60770447ad7_large/steaming-hot-soup-stockcake.jpg",
+    "tags": ["soup", "healthy", "monsoon","beverage"],
+    "link": "https://youtube.com/shorts/7WqJRisl5W8?si=Ilm27UtjQ2oXR87T"
+  },
+  {
+    "id": 6,
+    "dishName": "Paneer Tikka",
+    "Ingredients": ["Paneer", "Yogurt", "Ginger-Garlic Paste", "Spices", "Capsicum", "Onions"],
+    "description": "Grilled paneer marinated with yogurt & spices.",
+    "Steps": "Marinate paneer cubes, grill with veggies on skewers.",
+    "image": "https://sharethespice.com/wp-content/uploads/2024/02/Paneer-Tikka-Featured.jpg",
+    "tags": ["snacks", "tandoor", "spicy"],
+    "link": "https://youtube.com/shorts/QZlBmBq5KzU?si=I_KRSdVbULLcL0cg"
+  },
+  {
+    "id": 7,
+    "dishName": "Bhutta (Roasted Corn)",
+    "Ingredients": ["Corn on the Cob", "Salt", "Lemon", "Chilli Powder"],
+    "description": "Street-style roasted bhutta with tangy masala.",
+    "Steps": "Roast corn on flame, rub with masala and lemon.",
+    "image": "https://thumbs.dreamstime.com/b/tandoori-bhutta-roasted-corn-230992752.jpg?w=768",
+    "tags": ["street food", "corn", "monsoon"],
+    "link": "https://youtube.com/shorts/ZrRn5Qpi-5Y?si=r8OthSe98P_X62kH"
+  },
+   {
+    "id": 8,
+    "dishName": "Pav Bhaji",
+    "Ingredients": ["Pav bread", "Mixed vegetables", "Butter", "Spices"],
+    "description": "Spicy Mumbai street-style vegetable mash served with buttered pav.",
+    "Steps": "Boil and mash vegetables, add spices, serve with buttered pav.",
+    "image": "https://media.istockphoto.com/id/1363049215/photo/pav-bhaji.jpg?s=612x612&w=0&k=20&c=BFXMVKZCR2GPjs5aM6oXVeQF8GpeZje4hyxIl8P8GaE=",
+    "tags": ["street food", "vegetarian", "monsoon"],
+    "link": "https://youtu.be/wgV9pik8xqc?si=cvNBiMRYAA2_pvy2"
+  },
+  {
+    "id": 9,
+    "dishName": "Masala Chai",
+    "Ingredients": ["Tea leaves", "Milk", "Water", "Cardamom", "Ginger", "Sugar"],
+    "description": "Hot spiced tea perfect for rainy evenings.",
+    "Steps": "Boil water with spices, add tea leaves and milk, simmer, serve hot.",
+    "image": "https://images.unsplash.com/photo-1625033405953-f20401c7d848?q=80&w=600",
+    "tags": ["beverage", "tea", "monsoon"],
+    "link": "https://youtu.be/2KI-PGM7PYQ?si=tiXiufIFxteJzDZp"
+  },
+  {
+    "id": 10,
+    "dishName": "Vada Pav",
+    "Ingredients": ["Potato", "Gram flour", "Pav bread", "Chutney", "Spices"],
+    "description": "Classic Mumbai spicy potato fritter served in a bun.",
+    "Steps": "Make potato filling, coat in gram flour, deep fry, serve in pav with chutney.",
+    "image": "https://media.istockphoto.com/id/1257507141/photo/vada-pav-or-wada-pav-indian-desi-burger-is-a-street-food-dish-from-mumbai-maharashtra-indian.jpg?s=612x612&w=0&k=20&c=wkINH4KemesM95AFrdAUp7dVRN4-K1PorXbyQ1Jshe8=",
+    "tags": ["street food", "spicy", "snacks", "monsoon"],
+    "link": "https://youtube.com/shorts/2DugMGrjJ3s?si=nElw4WaIky5edcD5"
+  },
+  {
+    "id": 11,
+    "dishName": "Corn Pakora",
+    "Ingredients": ["Corn kernels", "Gram flour", "Chilli powder", "Spices", "Oil"],
+    "description": "Crunchy fried corn fritters, perfect for rainy weather.",
+    "Steps": "Mix corn with spices and gram flour, deep fry until golden, serve hot.",
+    "image": "https://media.istockphoto.com/id/1415221109/photo/corn-bhajiya.jpg?s=612x612&w=0&k=20&c=iupZIb2uXz-sTMJl1XAf0srZbmoaXtO701Sb9K9xahQ=",
+    "tags": ["snacks", "corn", "monsoon"],
+    "link": "https://youtube.com/shorts/iju1EmEngKk?si=nGTxdboDl8XaOJMz"
+  },
+  {
+    "id": 12,
+    "dishName": "Tomato Soup",
+    "Ingredients": ["Tomatoes", "Onion", "Garlic", "Cream", "Spices"],
+    "description": "Warm creamy tomato soup, great for monsoon comfort.",
+    "Steps": "Saute onion and garlic, add tomatoes, simmer, blend, add cream.",
+    "image": "https://media.istockphoto.com/id/1323137584/photo/close-up-of-indian-homemade-fresh-and-healthy-tomato-soup-garnished-with-fresh-coriander.jpg?s=612x612&w=0&k=20&c=ut4fXEq7or8HaCrPSG9rsca3rBAky8vDdvFpWzs1snw=",
+    "tags": ["soup", "healthy", "monsoon"],
+    "link": "https://youtube.com/shorts/gP4Ulh39Dpc?si=S5NEsYIVh0hChcnc"
+  },
+  {
+    "id": 13,
+    "dishName": "Pakora Platter",
+    "Ingredients": ["Vegetables", "Gram flour", "Spices", "Oil"],
+    "description": "Assorted fried pakoras served with chutney and tea.",
+    "Steps": "Coat vegetables in gram flour and spices, deep fry, serve hot with chutney.",
+    "image": "https://media.istockphoto.com/id/2162398430/photo/starter-food-in-table-nonveg-starter-food.jpg?s=612x612&w=0&k=20&c=XSFqdA7eZQQIfWQuGNr4CwOY3mb_Cm1twNUIXQqBm2o=",
+    "tags": ["snacks", "fried", "monsoon"],
+    "link": "https://youtu.be/xgaVWsxzXx0?si=E70QODL0y8-jF14E"
+  },
+  {
+    "id": 14,
+    "dishName": "Ginger Tea",
+    "Ingredients": ["Tea leaves", "Milk", "Water", "Ginger", "Sugar"],
+    "description": "Hot ginger tea, perfect to warm up on a rainy day.",
+    "Steps": "Boil water with ginger, add tea leaves and milk, simmer, serve hot.",
+    "image": "https://media.istockphoto.com/id/914152174/photo/hot-ginger-tea-cup-with-ginger-roots-on-wood-background.jpg?s=612x612&w=0&k=20&c=Eal1OfhEgVC62erwQUFxhZKDkPgEjUByCYI9FcHLzN4=",
+    "tags": ["beverage", "tea", "monsoon"],
+    "link": "https://youtube.com/shorts/LyQrcXRZ21I?si=z-KvXAM8H44CnZJZ"
+  }
+]

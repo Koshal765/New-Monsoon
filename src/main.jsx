@@ -10,6 +10,7 @@ import AddRecipeForm from "./components/AddRecipeForm.jsx";
 import MyRecipes from "./components/MyRecipes.jsx";
 
 
+
 const appRouter = createBrowserRouter([
   {
     path: "/",
@@ -23,10 +24,11 @@ const appRouter = createBrowserRouter([
         path: "/add-recipe",
         element:<AddRecipeForm/>
       },
-      {
+       {
         path: "/my-recipes",
         element:<MyRecipes/>
       },
+     
       {
         path: "/login",
         element: <Login/>,

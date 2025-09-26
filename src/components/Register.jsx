@@ -2,11 +2,13 @@
 
 import React, { useState } from "react";
 import banner from "../assets/Banner.png";
+import { useNavigate } from "react-router-dom";
 
 const Register= () => {
   const [formData, setFormData] = useState({ fullname: "", email: "", password: "", confirmPassword: "" });
   const [errors, setErrors] = useState({});
   const [success, setSuccess] = useState("");
+  const navigate = useNavigate();
 
   const handleChange = (e) => setFormData({ ...formData, [e.target.id]: e.target.value });
 
@@ -25,8 +27,10 @@ const Register= () => {
     if (validate()) {
       localStorage.setItem("user", JSON.stringify(formData));
       setSuccess("🎉 Registration successful! You can now login.");
+    
       setFormData({ fullname: "", email: "", password: "", confirmPassword: "" });
-      setErrors({});
+      setErrors({}); 
+       navigate("/login");
     }
   };
 

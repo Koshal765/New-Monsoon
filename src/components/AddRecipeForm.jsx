@@ -12,7 +12,7 @@ export default function AddRecipeForm() {
   const [recipes, setRecipes] = useState([]);
   const [link, setLink] = useState("");
 
-  const apiUrl = "https://6880ebc1f1dcae717b63f960.mockapi.io/myrecepies";
+  const apiUrl = "https://6880ec34f1dcae717b63fc74.mockapi.io/MyRecipies";
   const fetchRecipes = async () => {
     try {
       const res = await axios.get(apiUrl);

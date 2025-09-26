@@ -4,6 +4,8 @@ import { Link } from "react-router";
 
 const Navbar = () => {
   const navigate = useNavigate();
+
+  
   return (
     <>
       <div

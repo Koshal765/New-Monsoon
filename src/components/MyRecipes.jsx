@@ -110,7 +110,7 @@ const MyRecipes = () => {
   const handleDeleteUploaded = async (id) => {
     if (window.confirm("Delete this recipe?")) {
       try {
-        await fetch($`{apiUrl}`/$`{id}`, { method: "DELETE" });
+        await fetch(`${apiUrl}/${id}`, { method: "DELETE" });
         fetchUploadedRecipes(); // refresh after delete
       } catch (err) {
         console.error("Error deleting recipe:", err);

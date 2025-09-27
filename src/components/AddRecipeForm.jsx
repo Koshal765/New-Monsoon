@@ -74,7 +74,7 @@ export default function AddRecipeForm() {
       alert("Recipe added successfully!");
     } catch (err) {
       console.error(err);
-      alert("Failed to add recipe!");
+      alert("Failed to add recipe!Image size should be less than 1MB.");
     }
     navigate("/my-recipes");
   };

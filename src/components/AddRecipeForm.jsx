@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import imageCompression from "browser-image-compression";
+import { useNavigate } from "react-router-dom";
 
 export default function AddRecipeForm() {
   const [dishName, setDishName] = useState("");
@@ -11,6 +12,7 @@ export default function AddRecipeForm() {
   const [image, setImage] = useState("");
   const [recipes, setRecipes] = useState([]);
   const [link, setLink] = useState("");
+  const navigate = useNavigate();
 
   const apiUrl = "https://6880ec34f1dcae717b63fc74.mockapi.io/MyRecipies";
   const fetchRecipes = async () => {
@@ -74,6 +76,7 @@ export default function AddRecipeForm() {
       console.error(err);
       alert("Failed to add recipe!");
     }
+    navigate("/my-recipes");
   };
 
   return (

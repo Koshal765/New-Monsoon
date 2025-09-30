@@ -5,20 +5,23 @@ import Chai from "../assets/Chai.jpg";
 import Banner3 from "../assets/VadaPav.png";
 import recipesData from "../api/api.json";
 import "../App.css"; 
+import { useNavigate } from "react-router";
 
 const RecipeCard = () => {
   const [recipes, setRecipes] = useState([]);
   const [displayedRecipes, setDisplayedRecipes] = useState([]);
   const [likes, setLikes] = useState({});
   const [searchText, setSearchText] = useState("");
-  const [savedRecipes, setSavedRecipes] = useState([]); // added
-
+  const [savedRecipes, setSavedRecipes] = useState([]);
+  const [filterTag, setFilterTag] = useState("");
+ // added
+  const navigate = useNavigate();
 
   useEffect(() => {
     setRecipes(recipesData);
     setDisplayedRecipes(recipesData);
     const likesInit = recipesData.reduce((acc, r) => {
-      acc[r.id] = false;
+      acc[r.id] = {liked: false, count: 0}; // Initialize each recipe with not liked and 0 count
       return acc;
     }, {});
     setLikes(likesInit);
@@ -29,8 +32,29 @@ const RecipeCard = () => {
 
 
   const toggleLike = (id) => {
-    setLikes((prev) => ({ ...prev, [id]: !prev[id] }));
+    setLikes((prevLikes) => ({
+      ...prevLikes,
+      [id]: {
+        liked: !prevLikes[id].liked,
+        count :prevLikes[id].count+1 // added
+  },
+}));
   };
+//filter function
+const handleFilter = (tag) => {
+  setFilterTag(tag); // save selected tag
+
+  if (tag === "") {
+    setDisplayedRecipes(recipes); // show all if no tag
+  } else {
+    const filtered = recipes.filter((r) =>
+      r.tags.map(t => t.toLowerCase()).includes(tag.toLowerCase())
+    );
+    setDisplayedRecipes(filtered);
+  }
+};
+
+// search function
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -53,7 +77,9 @@ const RecipeCard = () => {
     const updated = [...savedRecipes, recipe]; //added
     setSavedRecipes(updated); // added
     localStorage.setItem("savedRecipes", JSON.stringify(updated)); //added
-    window.dispatchEvent(new Event("savedRecipesUpdated")); // added  
+    window.dispatchEvent(new Event("savedRecipesUpdated"));
+    alert("Saved to My Recipe"); // added
+    navigate("/my-recipes")// added  
   };  // added
 
 function shareToWhatsapp(dishName, link) {
@@ -178,7 +204,7 @@ function shareToWhatsapp(dishName, link) {
           <div>
             <div className="d-flex align-items-center justify-content-between border" style={{width:"230px"}} >
          <h5 className="mt-2" >Filter by Tag</h5>  
-          <select className="form-select border border-bg-warning fs-5 " style={{ maxWidth: "100px"}} value={searchText} onChange={(e) => setSearchText(e.target.value)}>
+          <select className="form-select border border-bg-warning fs-5 " style={{ maxWidth: "100px"}} value={filterTag} onChange={(e) => handleFilter(e.target.value)}>
                <option value="">All</option>
               <option value="Beverage">Beverages</option>
               <option value="Spicy">Spicy</option>
@@ -242,13 +268,12 @@ function shareToWhatsapp(dishName, link) {
                 onClick={() => toggleLike(recipe.id)}
                 type="button"
               >
-                {likes[recipe.id] ? (
-                  <>
-                   <span className="fs-2">❤️</span>
-                  </>
-                ) : (
-                  <span className="fs-2">🤍</span>
-                )}
+              
+                    <span className={`fs-4 ${likes[recipe.id]?.liked ? "text-red-600" : "text-gray-500"}`}>
+    ❤️ {likes[recipe.id]?.count || 0}
+  </span>
+                 
+                
               </button>
               <button  className="btn border-0 btn-sm  mx-3 mb-3 fs-4"  onClick={() => handleSave(recipe)}>💾</button>
               <button className="btn border-0 btn-sm  mx-3 mb-3 fs-4" onClick={() => shareToWhatsapp(recipe.dishName, recipe.link)} >➤</button>
